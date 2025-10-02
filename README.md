@@ -41,6 +41,8 @@ State Management: Zustand
 
 AI Integration
 
+To run the program
+
 ```powershell
 cd ai-assistant
 npm install
