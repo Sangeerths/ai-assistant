@@ -1,34 +1,50 @@
 🤖 AI Assistant
 
-An AI-powered web application built with React (Vite) that provides separate role-based dashboards and tools for Interviewers and Interviewees. The platform simplifies interview management and preparation with features like scheduling, feedback, practice modules, and performance reports.
+AI Assistant is an AI-powered web application built with React (Vite) that offers role-based dashboards and tools for Interviewers and Interviewees. This platform simplifies interview management, preparation, and feedback by providing scheduling, practice modules, performance reports, and more.
 
 🚀 Features
 🔑 Authentication
 
 User login & registration
 
-Role selection (Interviewer or Interviewee)
+Role selection: Interviewer or Interviewee
 
 👨‍💼 Interviewer Module
 
-Dashboard → Overview of interviews and candidates
+Dashboard: Overview of interviews and candidates
 
-Schedule → Manage interview slots
 
-Reports → Review candidate performance and generate insights
+Reports: Review candidate performance and generate insights
 
 👩‍🎓 Interviewee Module
 
-Dashboard → Track upcoming interviews and progress
+Dashboard: Track upcoming interviews and progress
 
-Practice → Mock interview/practice session with AI
 
-Feedback → View interviewer feedback and performance summaries
+Feedback: View interviewer feedback and performance summaries
 
 🎨 General Features
 
 Clean and responsive UI
 
-Role-based layouts (Interviewer vs Interviewee)
+Role-based layouts
 
 Modular file structure for scalability
+
+🛠 Tech Stack
+
+Frontend: React (Vite)
+)
+
+State Management: Zustand 
+
+
+AI Integration
+
+```powershell
+npm install
+npm run dev
+```
+
+
+
