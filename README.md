@@ -1,35 +1,34 @@
-# React + Vite
+🤖 AI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application built with React (Vite) that provides separate role-based dashboards and tools for Interviewers and Interviewees. The platform simplifies interview management and preparation with features like scheduling, feedback, practice modules, and performance reports.
 
-Currently, two official plugins are available:
+🚀 Features
+🔑 Authentication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User login & registration
 
-## React Compiler
+Role selection (Interviewer or Interviewee)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👨‍💼 Interviewer Module
 
-## Expanding the ESLint configuration
+Dashboard → Overview of interviews and candidates
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ai-assistant
+Schedule → Manage interview slots
 
-Persistence & resume behavior
------------------------------
+Reports → Review candidate performance and generate insights
 
-This project now uses a small persistent client store (Zustand) to keep interview sessions, timers, answers and progress in localStorage. This means:
+👩‍🎓 Interviewee Module
 
-- If a candidate refreshes or closes the page, their in-progress interview will be restored on reopen.
-- When an unfinished session is detected the Interviewee Dashboard shows a "Welcome Back" modal letting the user resume or discard.
+Dashboard → Track upcoming interviews and progress
 
-To install new dependencies and run the app locally:
+Practice → Mock interview/practice session with AI
 
-```powershell
-npm install
-npm run dev
-```
+Feedback → View interviewer feedback and performance summaries
 
-If you had an older version of the app that used the legacy localStorage key (`ai_assistant_store_v1`) the store will attempt to migrate existing sessions automatically into the new store key. To manually clear saved sessions in the browser, open DevTools -> Application -> Local Storage and remove keys prefixed with `ai_assistant`.
+🎨 General Features
 
+Clean and responsive UI
+
+Role-based layouts (Interviewer vs Interviewee)
+
+Modular file structure for scalability
