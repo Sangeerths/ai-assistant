@@ -1,0 +1,157 @@
+:root {
+  --bg: #0f1724; /* dark blue-gray */
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #6c8cff;
+  --danger: #ff6b6b;
+}
+
+/* Page background */
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #071028 0%, #031025 100%);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full width card */
+.login-card {
+  width: 100%;        /* full width */
+  max-width: 100%;
+  min-height: 100vh;  /* full height */
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: none;
+  padding: 2rem;
+  border-radius: 0;   /* remove curve for full page */
+  color: #e6eef8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px; /* keep inputs at nice width */
+}
+
+/* Labels */
+.login-form label {
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* Inputs */
+.login-form input {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color: inherit;
+  outline: none;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  width: 100%; /* inputs span full form width */
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 0 4px rgba(108,140,255,0.08);
+  border-color: var(--accent);
+}
+
+/* Error message */
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
+/* Role section */
+.role-label {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+.role-group {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.35rem 0;
+}
+
+.role-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.02);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.role-option input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Buttons */
+.btn {
+  flex: 1 1 auto;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), #5fb0ff);
+  color: #081226;
+}
+
+.btn.link {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.04);
+  color: var(--muted);
+}
+
+/* Info message */
+.message {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: rgba(108,140,255,0.06);
+  border-radius: 8px;
+  color: #cfe3ff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.sep {
+  color: rgba(255,255,255,0.06);
+}
